@@ -1,0 +1,145 @@
+.bookItemDescription {
+  display: none;
+}
+
+.bookItemDescription .isActive {
+  display: block;
+}
+
+.bookItemShortDescription {
+  display: none;
+}
+
+.bookItemShortDescription .isActive {
+  display: block;
+}
+
+.bookItem {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 8px 40px 16px 40px;
+  width: 360px;
+  box-shadow: 1px 1px 20px rgba(20, 20, 20, 0.25);
+  border-radius: 12px;
+}
+
+.bookItemImage {
+  display: flex;
+  margin: 16px auto 10px auto;
+  height: 340px;
+  transition: all 0.2s ease-in-out;
+}
+
+.bookItemImage:hover {
+  transform: scale(1.1);
+}
+
+.bookDescription {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.bookItemTitle {
+  max-width: 360px;
+  color: black;
+  font-size: 24px;
+  font-weight: 500;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.bookItemAuthor {
+  color: #808080;
+  font-size: 20px;
+  max-width: 218px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.bookItemPriceLine {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.bookItemPrice {
+  color: rgb(44, 134, 225);
+  font-size: 24px;
+  font-weight: 500;
+  align-self: center;
+}
+
+.bookItemButton {
+  padding: 12px 30px;
+  font-weight: 600;
+  font-size: 20px;
+  color: rgb(44, 134, 225);
+  border-radius: 8px;
+  border: 2px solid rgb(44, 134, 225);
+  background-color: transparent;
+}
+
+.bookItemButton:hover {
+  transform: scale(1.2);
+}
+
+@media screen and (max-width: 480px) {
+  .bookItem {
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+  }
+
+  .bookItemImage {
+    margin-bottom: 1rem;
+    width: 80%;
+    height: auto;
+  }
+
+  .bookDescription {
+    width: inherit;
+    text-align: center;
+  }
+
+  .bookItemTitle {
+    align-self: center;
+    max-width: 90%;
+
+    font-size: 2vh;
+  }
+
+  .bookItemAuthor {
+    align-self: center;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .bookItemPriceLine {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .bookItemPrice {
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+  }
+
+  .bookItemButton {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+  }
+
+  .bookItemShortDescription {
+    display: none;
+  }
+
+  .bookItemDescription {
+    font-size: 0.8rem;
+  }
+}

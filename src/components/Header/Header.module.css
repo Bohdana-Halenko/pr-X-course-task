@@ -1,0 +1,114 @@
+.headerContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 16px;
+  background-color: rgb(44, 134, 225);
+  color: #ffffff;
+}
+
+.headerName {
+  display: flex;
+  gap: 10px;
+  padding-left: 38px;
+  font-family: "Barlow";
+  font-weight: 700;
+  font-size: 20px;
+  background-repeat: no-repeat;
+  background-position-x: start;
+  background-position-y: center;
+}
+
+.headerName a {
+  color: inherit;
+}
+
+.headerName span,
+div {
+  font-weight: 400;
+}
+
+.userNavigation {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 40px;
+}
+
+.headerCart {
+  position: relative;
+  margin: 0;
+}
+
+.cartBage {
+  position: absolute;
+  top: -6px;
+  right: -10px;
+  align-self: center;
+  padding: 1px 6px 3px 6px;
+  color: rgb(44, 134, 225);
+  font-size: 10px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.buttonSignOut {
+  padding: 10px 20px;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: rgb(44, 134, 225);
+  border-radius: 8px;
+  border: transparent;
+  background: white;
+  transition: all 0.2s ease-in-out;
+}
+
+.buttonSignOut:hover {
+  transform: scale(1.1);
+}
+
+.headerUsername {
+  display: flex;
+  gap: 10px;
+}
+
+.headerCart {
+  margin: 0;
+  align-self: center;
+}
+
+.headerUsername div {
+  font-size: 20px;
+  color: white;
+}
+
+.cartIcon {
+  display: block;
+  margin: 0;
+}
+
+@media (max-width: 380px) {
+  .buttonSignOut {
+    padding: 6px 16px;
+  }
+
+  .userNavigation {
+    justify-content: center;
+    align-items: center;
+  }
+
+
+}
+
+@media (max-width: 767px) {
+  .headerContainer {
+    flex-direction: column;
+    height: fit-content;
+    gap: 1rem;
+  }
+
+  .headerName span {
+    display: none;
+  }
+}

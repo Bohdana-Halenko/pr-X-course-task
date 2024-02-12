@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  height: 72px;
+  background-color: rgb(44, 134, 225);
+}
+
+input:focus-visible {
+  outline: none;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 4vw auto;
+}
+
+.bioSubtitle {
+  margin: 0;
+  margin-bottom: 16px;
+  color: #000000;
+  font-family: "Barlow";
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: center;
+}
+
+.avatarNew {
+  margin: 0;
+  margin-bottom: 16px;
+  max-width: 160px;
+  border: none;
+}
+
+.usernameInput {
+  margin: 0 auto 16px;
+  width: 200px;
+  height: 40px;
+  padding-left: 16px;
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 24px;
+  color: #000000;
+  border-radius: 8px;
+  background: rgba(201, 204, 209, 0.24);
+}
+
+/* Buttons */
+
+.buttonSignIn {
+  padding: 10px 44px;
+  width: 200px;
+  font-family: "Barlow";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400px;
+  line-height: 24px;
+  text-align: center;
+  color: #ffffff;
+  border-radius: 8px;
+  border: transparent;
+  background-color: rgb(44, 134, 225);
+  transition: all 0.2s ease-in-out;
+}
+
+.buttonSignIn:hover {
+  transform: scale(1.1);
+}
+
+.buttonSignIn[disabled] {
+  background-color: #d3d3d3;
+  color: #808080;
+  cursor: not-allowed;
+}
+
+@media (max-width: 767px) {
+  .content {
+    margin-top: 10vh;
+  }
+}

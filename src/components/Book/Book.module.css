@@ -29,6 +29,7 @@
   margin: 16px auto 10px auto;
   height: 340px;
   transition: all 0.2s ease-in-out;
+  width: 100%;
 }
 
 .bookItemImage:hover {

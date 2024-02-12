@@ -1,5 +1,5 @@
 import styles from "./Cart.module.css";
-import emptyCart from "../../assets/img/empty_cart.svg";
+import emptyCart from "../../assets/img/empty_cart.png";
 import imageNotFound from "../../assets/img/imageNotFound.png";
 import Counter from "../Counter/Counter";
 import NavMenu from "../NavMenu/NavMenu";

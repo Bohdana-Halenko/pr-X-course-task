@@ -1,6 +1,6 @@
 # Check Out Project
 
-Open my project [here](https://Bohdana-Halenko.github.io/pr-x-course-task/)
+Open my project [here](https://bohdana-halenko.github.io/pr-x-course-task/)
 
 # Getting Started with Create React App
 
